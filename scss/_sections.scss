@@ -1,0 +1,425 @@
+/* 
+ * Section
+ */
+/* 
+ * Section: About 
+ */
+
+.about {
+	.section-title {
+		margin: 0 0 25px;
+	}
+}
+.president-quote {
+	text-align: center;
+	img {
+		margin: 0 auto;
+	}
+	figure {
+		position: relative;
+		blockquote {
+			background: #fff;
+			border: none;
+			border-bottom: 5px solid #ddd;
+			color: #111;
+			font-size: 20px;
+			width: 240px;
+			bottom: 10px;
+			
+			@include borderRadius(15px);
+			img {
+				position: absolute;
+			}
+		}
+	}
+}
+.president-intro {
+	line-height: 2;
+	padding-top: 60px;
+}
+
+/* 
+ * Section: Schedule
+ */
+.schedule {
+	background: $purple-darker;
+	//transform: skewx(-5deg);
+	h3 {
+		color: $main-orange;
+	}
+}
+.sch-item {
+	border: 2px solid $main-blue;
+	display: block;
+	width: 160px;
+	height: 160px;
+	margin: 0 auto;
+	margin-bottom: 16px;
+	padding: 16px 0;
+	position: relative;
+	text-align: center;
+	@include borderRadius(100%);
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		background: $main-blue;
+		width: 100%;
+	}
+	&:hover {
+		&::after {
+			animation: rotateThis 3s linear infinite;
+		}
+	}
+}
+.sch-order {
+	background: $main-orange;
+	color: #fff;
+	font-size: 22px;
+	font-family: "Roboto", sans-serif;
+	margin: 0 auto;
+	margin-bottom: 12px;
+	width: 36px;
+	@include borderRadius(100%);
+}
+.sch-title, .sch-title a {
+	color: #eee;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1;
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+.sch-date {
+	color: $main-orange;
+	display: block;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 12px;
+	width: 100%;
+}
+/* 
+ * Section: final-list
+ */
+
+.final-list {
+	background: $purple-dark;
+	padding-bottom: 12px;
+	h3 {
+		color: $main-orange;
+		margin-bottom: 12px;	
+	}
+	p {
+		color: #eee;
+	}
+}
+.agenda {
+	background: $purple-dark;
+	padding-bottom: 12px;
+	h3 {
+		color: $main-orange;
+		margin-bottom: 12px;	
+	}
+}
+
+/* 
+ * Section: Awards
+ */
+.awards {
+	background: url(../images/bkg-doodles.png) no-repeat center center / contain;
+}
+.awa-item {
+	border-bottom: 5px solid $main-blue;
+	margin-bottom: 15px;
+	text-align: center;
+	@include linear-gradient(left, $purple-darker, $purple-darker);
+}
+.awa-title {
+	color: $main-orange;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px 0;
+	border-bottom: 2px solid $main-orange;;
+}
+.awa-content {
+	padding: 16px 0;
+}
+.awa-ntd {
+	display: block;
+}
+.awa-amount {
+	font-family: "Roboto", sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0 5px;
+}
+.ct-label {
+	fill: #111;
+	font-family: "Roboto", sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	width: 50px;
+}
+.ct-series-a .ct-bar, 
+.ct-series-a .ct-line, 
+.ct-series-a .ct-point, 
+.ct-series-a .ct-slice-donut {
+	stroke: $blue-neon;
+}
+.ct-series-b .ct-bar, 
+.ct-series-b .ct-line, 
+.ct-series-b .ct-point, 
+.ct-series-b .ct-slice-donut {
+	stroke: $main-orange;
+}
+.ct-series-c .ct-bar, 
+.ct-series-c .ct-line, 
+.ct-series-c .ct-point, 
+.ct-series-c .ct-slice-donut {
+	stroke: $gold;
+}
+.ct-series-d .ct-bar, 
+.ct-series-d .ct-line, 
+.ct-series-d .ct-point, 
+.ct-series-d .ct-slice-donut {
+	stroke: $main-gray;
+}
+.chart-label {
+	font-size: 15px;
+	float: left;
+	text-align: center;
+	margin-right: 16px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	div {
+		&:nth-child(1) {
+			color: $blue-neon;
+		}
+		&:nth-child(2) {
+			color: $main-orange;
+		}
+		&:nth-child(3) {
+			color: $gold;
+		}
+		&:nth-child(4) {
+			color: $main-gray;
+		}
+		span {
+			font-size: 24px;
+			//display: block;
+		}
+	}
+
+}
+/* 
+ * Section: Rules
+ */
+.rule-item {
+	position: relative;
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	position: relative;
+	text-align: center;
+	h5 {
+		color: #fff;
+		font-size: 26px;
+	}
+	img {
+		width: 240px;
+	}
+	p {
+		display: block;
+		font-size: 15px;
+		width: 100%;
+		bottom: 15px;
+		text-align: left;
+	}
+}
+.rule-team {
+	background: $purple-darker;
+	border-top: 2px solid $main-blue;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.rule-team-title {
+	// border-bottom: 1px solid $blue-neon;
+	font-size: 21px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.rule-team-content {
+	border-top: 2px solid $main-orange;
+	padding: 10px;
+}
+ol.attention {
+	font-size: 14px;
+}
+#steps {
+	background: url(../images/bkg-doodles.png) no-repeat center center / cover;
+	margin: 60px 0 40px 0;
+	padding: 40px 0;
+}
+.rule-steps-wrap {
+	background: $purple-darker;
+	padding: 10px;
+	position: relative;
+	//border: 1px solid $main-blue;
+	margin-bottom: 20px;
+	// margin-top: -40px;
+	// margin-bottom: -60px;
+	@include clearfix();
+	h4 {
+		border-bottom: 3px solid $main-orange;
+		padding-bottom: 6px;
+		text-align: center;
+	}
+	p {
+		text-align: justify;
+	}
+	.rule-step-order {
+		position: absolute;
+		color: $purple-light;
+		font-size: 140px;
+		left: 0;
+		top: -50px;
+		z-index: 0;
+		opacity: .5;
+	}
+}
+
+/* 
+ * Section: Workshop
+ */
+.workshop-reg {
+	text-align: center;
+	.btn {
+		background: $gold;
+		color: $purple-darker;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 15px;
+		@include borderRadius(3px);
+		&:hover {
+			background: #eee;
+		}
+		&.disabled,
+		&.disabled:hover {
+			background: darken($gold, 20%) !important;
+		}
+	}
+}
+.workshop-info {
+	text-align: center;
+	span {
+		font-size: 21px;
+		font-weight: bold;
+	}
+}
+
+
+/* 
+ * Section: FAQ
+ */
+
+// .faq {
+// 	.panel-heading {
+// 	    cursor: pointer;
+// 	}
+
+// 	.faq-toggle.collapsed::before {
+// 		font-family: "Ionicons";
+// 		content: "\f218";
+// 		transition: 0.5s linear ease-out;
+// 		position: absolute;
+// 		left: 15px;
+// 	}
+
+// 	.faq-toggle::before {
+// 		position: absolute;
+// 		left: 15px;
+// 		font-family: "Ionicons";
+// 		content: "\f209";
+// 	}
+
+// 	.panel-group .panel+.panel {
+// 		margin-top: 15px;
+// 	}
+
+// 	.panel-default>.panel-heading {
+// 		color: #FFF;
+// 		background-color: #000000;
+// 		border-color: #000;
+// 		border-radius: 0;
+// 		padding: 0;
+
+// 		a {
+// 			position: relative;
+// 			display: block;
+// 			text-decoration: none;
+// 			padding: 15px 15px 15px 35px;
+// 		}
+// 	}
+// }
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (max-width: 480px) {
+	p {
+		margin-bottom: 10px;
+	}
+	.sch-item {
+		width: 160px;
+		height: 160px;
+	}
+	.sch-order {
+		font-size: 22px;
+		width: 36px;
+	}
+	.sch-title,
+	.sch-title a {
+		font-size: 21px;
+	}
+	.sch-date {
+		font-size: 16px;
+	}
+	.awa-amount {
+		font-size: 32px;
+	}
+	.rule-item {
+		//width: 160px;
+		img {
+			max-width: 160px;
+		}
+	}
+}
+@media (max-width: 320px) {
+	.president-quote {
+		img {
+			max-width: 280px;
+		}
+	}
+	.sch-item {
+		width: 140px;
+		height: 140px;
+	}
+	.rule-item {
+		//width: 140px;
+		margin-bottom: 0;
+		img {
+			max-width: 130px;
+		}
+	}
+}

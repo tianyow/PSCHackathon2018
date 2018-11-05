@@ -1,0 +1,441 @@
+/* 
+ * Navigation
+ */
+#navbar-items {
+	text-align: center;
+}
+.navbar-custom {
+	border: 0;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	// background-color: #000;
+	transition: all 0.2s linear 0s;
+
+	.navbar-nav {
+		background: none;
+		display: inline-block;
+		float: none;
+		margin: 0 auto;
+		padding-top: 10px;
+		li {
+			margin: 0;
+		}
+		>li>a {
+			color: $main-gray;
+			text-transform: uppercase;
+			font-size: $default-font;
+			//font-weight: 400;
+			border-bottom: 3px solid transparent;
+
+			&:focus, 
+			&:hover {
+				background-color: transparent;
+				border-color: $main-blue;
+			}
+		}
+
+		>.active>a {
+			//border-color: $blue-neon;
+			color: $main-orange;
+			font-weight: bold;
+		}
+	}
+}
+.navbar-toggle {
+	background: none;
+	border: 0;
+	border-radius: 0;
+	margin-top: 2px;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	@include borderRadius(100%);
+	
+	.icon-bar {
+		background-color: $main-orange;
+		width: auto;
+		height: 1px;
+		margin: 8px 0;
+	}
+}
+#btn-cta {
+	a {
+		background: $orange;
+		border: none;
+		color: #fff !important;
+		@include transition(all, .2s, linear);
+		@include borderRadius(60px);
+		&.squareBtn {
+			@include borderRadius(0px);
+		}
+		&:hover {
+			background: $blue-dark !important;
+		}
+	}
+}
+#rwd-btn-cta {
+	margin: 0 auto !important;
+	//width: 90%;
+	a {
+		// background: $orange;
+		// border: none;
+		color: #fff !important;
+		// @include borderRadius(60px);
+		// &:hover {
+		// 	background: $orange;
+		// }
+	}
+}
+// RWD Menu
+.rwd-menu {
+	background: $purple-darker url('../images/psc-hac-bkg-bw.png') no-repeat center center;
+	background-size: contain;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1999;
+	opacity: 0;
+	visibility: hidden;
+	margin-left: -100%;
+	margin-right: 100%;
+	&.show {
+	  opacity: 1;
+	  visibility: visible;
+	  margin-left: 0;
+	  margin-right: 0;
+	  transition: .3s linear all;
+	}
+}
+.rwd-menu-list {
+	margin: 0;
+	padding: 0;
+	padding-top: 64px;
+	li {
+		margin: 0;
+		//text-align: center;
+		list-style: none;
+	}
+	>li>a {
+		color: $main-orange;
+		font-size: 24px;
+		float: left;
+		width: 100%;
+		padding: 16px 10%;
+		&:focus, 
+		&:hover {
+			background-color: transparent;
+			border-color: $main-orange;
+			text-decoration: none;
+		}
+	}
+	>.active>a {
+		//border-color: $blue-neon;
+		color: $purple-dark;
+		font-weight: bold;
+	}
+}
+.smenu-close {
+	background: url('../images/sidemenu-close.svg') no-repeat;
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+
+.navbar-solid {
+	//background-color: $purple-dark !important;
+	padding: 0 !important;
+	transition: all 0.2s linear 0s;
+	@include linear-gradient(to bottom right, $purple-light, $purple-dark);
+}
+
+.site-branding {
+    float: left;
+    margin-top: 0;
+    margin-left: 10px;
+
+  //   .logo {
+	 //    color: #000;
+	 //    //font-size: 14px;
+	 //    //font-weight: 700;
+	 //    margin-right: 5px;
+	 //    letter-spacing: 3px;
+	 //    text-transform: uppercase;
+	    
+		// &:focus, 
+		// &:hover {
+		// 	text-decoration: none;
+		// } 
+		.header-title {
+			position: absolute;
+			max-width: 150px;
+			top: -15px;
+		}
+}
+
+/* 
+ * 5.0 Site Header
+ */
+
+.site-header {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	position: relative;
+	text-align: center;
+	background: url(../images/bkg-doodles.png) no-repeat center center / cover;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		// background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.intro {
+		color: #000;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+  	width: 100%;
+  	margin: 0 auto;
+		z-index: 1;
+		padding: 0 15px;
+		//transform-style: preserve-3d;
+
+		background: url(../images/psc-hackathon2018-title.svg) no-repeat center center;
+		background-size: contain;
+		height: 75vh;
+		top: 30px;
+
+
+		h2 {
+			margin-top: 0px;
+			font-size: 25px;
+			font-weight: 300;
+		}
+
+		h1 {
+			margin-top: 0px;
+			font-size: 30px;
+		}
+
+		p {
+			font-size: 20px;
+			margin-bottom: 10px;
+			font-weight: 300;
+		}
+	}
+}
+// 首頁圖案組合
+.title-clips {
+	display: block;
+	position: absolute;
+	z-index: 9;
+	//transform: translateZ(20px);
+}
+.txt-apply-day {
+	width: 280px;
+	right: 9%;
+	top: 10%;
+}
+// 首頁白色字
+.txt-demo-day {
+	width: 210px;
+	left: 7%;
+	top: 35%;
+}
+.txt-awards {
+	width: 230px;
+	right: 5%;
+	top:  40%;
+}
+.title-icon-science {
+	width: 80px;
+	height: 80px;
+	left: 3%;
+	top: 1%;
+	img {
+		width: 300px;
+		height: auto;
+	}
+}
+.title-icon-experiment {
+	right: 5%;
+	bottom: 6%;
+	img {
+		width: 280px;
+		height: auto;
+	}
+}
+
+@media (min-width:768px) {
+	.navbar-custom {
+		background-color: transparent;
+		padding-top: 30px;
+	}
+
+	.site-branding { 
+		margin-top: 6px;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1024px) {
+	// 首頁圖案組合
+	.txt-apply-day {
+		width: calc(280px * 0.8);
+		right: 5%;
+		top: 15%;
+	}
+	// 首頁白色字
+	.txt-demo-day {
+		width: calc(210px * 0.7);
+		left: 5%;
+		top: 35%;
+	}
+	.txt-awards {
+		width: calc(260px * 0.7);
+		right: 4%;
+		top:  40%;
+	}
+	.title-icon-science {
+		left: 5%;
+		top: 1%;
+		img {
+			width: calc(400px * .8);
+			height: auto;
+		}
+	}
+	.title-icon-experiment {
+		right: 3%;
+		bottom: 6%;
+		img {
+			width: calc(360px * .8);
+			height: auto;
+		}
+	}
+}
+@media (max-width: 768px) {
+	// 首頁圖案組合
+	.txt-apply-day {
+		width: calc(280px * 0.6);
+		right: 5%;
+		top: 15%;
+	}
+	// 首頁白色字
+	.txt-demo-day {
+		width: calc(210px * 0.6);
+		left: 5%;
+		top: 35%;
+	}
+	.txt-awards {
+		width: calc(260px * 0.6);
+		right: 4%;
+		top:  40%;
+	}
+	.title-icon-science {
+		left: 2%;
+		top: 1%;
+		img {
+			width: calc(400px * .6);
+			height: auto;
+		}
+	}
+	.title-icon-experiment {
+		right: 1%;
+		bottom: 6%;
+		img {
+			width: calc(360px * .6);
+			height: auto;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.site-header {
+		.intro {
+			width: 100%;
+		}
+	}
+	// 首頁圖案組合
+	.txt-apply-day {
+		width: calc(280px * 0.6);
+		right: 8%;
+		top: 15%;
+	}
+	// 首頁白色字
+	.txt-demo-day {
+		width: calc(210px * 0.6);
+		left: 1%;
+		top: 75%;
+	}
+	.txt-awards {
+		width: calc(260px * 0.6);
+		right: 1%;
+		top:  25%;
+	}
+	.title-icon-science {
+		left: 0%;
+		top: 1%;
+		img {
+			width: calc(400px * .6);
+			height: auto;
+		}
+	}
+	.title-icon-experiment {
+		right: 0%;
+		bottom: 0%;
+		img {
+			width: calc(360px * .6);
+			height: auto;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.site-header {
+		.intro {
+			width: 100%;
+		}
+	}
+	// 首頁圖案組合
+	.txt-apply-day {
+		width: calc(280px * 0.5);
+		right: 8%;
+		top: 15%;
+	}
+	// 首頁白色字
+	.txt-demo-day {
+		width: calc(210px * 0.5);
+		left: 1%;
+		top: 75%;
+	}
+	.txt-awards {
+		width: calc(260px * 0.5);
+		right: 1%;
+		top:  25%;
+	}
+	.title-icon-science {
+		left: 0%;
+		top: 1%;
+		img {
+			width: calc(400px * .5);
+			height: auto;
+		}
+	}
+	.title-icon-experiment {
+		right: 0%;
+		bottom: 0%;
+		img {
+			width: calc(360px * .5);
+			height: auto;
+		}
+	}
+}

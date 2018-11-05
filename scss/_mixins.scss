@@ -1,0 +1,163 @@
+$default-font: 18px;
+
+$gold:           #dbb100;
+
+$blue-dark:      #1b1464;
+$blue-mid:       #2e3192;  
+$blue-navy:      #29abe2;
+$blue-neon:      #00ffff;
+
+$pink-neon:      #ff7bac;
+$orange:         #f25a24;
+
+// backgound gradient colors
+$purple-light:   #b93bb8;
+$purple-dark:    #3A2B84;
+$purple-darker:  #301152;
+
+// main theme colors
+$main-blue:      #70C7DA;
+$main-orange:    #EF856E;
+$main-gray:      #DCDDDD;
+
+
+
+////////////////////////////////////////////////////////////////////
+@mixin clearfix {
+  zoom: 1;
+  &:before, &:after {
+    content: '';
+    display: table;
+  }
+  &:after { clear: both; }
+}
+@mixin hideText() {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+// Corner Radius
+@mixin borderRadius($corner) {
+  -webkit-border-radius: $corner;
+  -moz-border-radius: $corner;
+  border-radius: $corner;
+}
+// Effects
+@mixin dropShadow($x, $y, $blur, $size, $color) {
+  -webkit-box-shadow: $x $y $blur $size $color;
+  -moz-box-shadow: $x $y $blur $size $color;
+  box-shadow: $x $y $blur $size $color;
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')"; */
+}
+@mixin innerShadow($innerDistance, $color) {
+  -webkit-box-shadow: inset 0 0 $innerDistance $color;
+  -moz-box-shadow: inset 0 0 $innerDistance $color;
+  box-shadow: inset 0 0 $innerDistance $color;
+}
+@mixin textGlow($glowDistance, $glowColor) {
+  -webkit-text-shadow: 0 0 $glowDistance $glowColor;
+  -moz-text-shadow: 0 0 $glowDistance $glowColor;
+  text-shadow: 0 0 $glowDistance $glowColor;
+}
+// Gradients
+@mixin linear-gradient($dir, $fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  //background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient($dir, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient($dir, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient($dir, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient($dir, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient($dir, $fromColor, $toColor);
+  //filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+@mixin radial-gradient($from, $to) {
+  background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+  background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background-color: $from;
+}
+// Transition
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+// Transform
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+// scale
+@mixin scale($scale) {
+	 @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+// transform origin
+@mixin transform-origin ($origin) {
+    -moz-transform-origin: $origin;
+	     -o-transform-origin: $origin;
+	    -ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+// Animation & Keyframes
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }  
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }  
+  @keyframes $animation-name {
+    @content;
+  }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+// Animations
+@keyframes rotateThis {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+}

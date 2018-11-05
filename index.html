@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" href="https://plus.google.com/b/104752548681875745801/" />
+  <meta name="copyright" content="Pershing Systems Corporation." />
+  <meta name="keywords" content="北祥, 黑客松, 競賽, 雲端創新服務, 人工智慧應用, Modern Office, 創意大賞, 程式馬拉松, Hackathon" />
+  <meta name="description" content="北祥公司舉辦2018黑客松創意大賞競賽，藉由此次黑客松競賽協助您勾勒出夢想中的科技藍圖。本次競賽主題以雲端創新服務、人工智慧應用、Modern Office等領域，以創造未來並具有競爭力和商業化潛力的產品原型為導向，誠摯邀請全國各大專院校學生團隊、北祥同仁與夥伴客戶的參加本次競賽。" />
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Facebook og -->
+  <meta property="og:url" content="http://www.pershing.com.tw/tw/pschackathon2018/index.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="2018 北祥黑客松 那些科技 超有試!" />
+  <meta property="og:description" content="北祥公司舉辦2018黑客松創意大賞競賽，藉由此次黑客松競賽協助您勾勒出夢想中的科技藍圖。本次競賽主題以雲端創新服務、人工智慧應用、Modern Office等領域，以創造未來並具有競爭力和商業化潛力的產品原型為導向，誠摯邀請全國各大專院校學生團隊、北祥同仁與夥伴客戶的參加本次競賽。" />
+  <meta property="og:image" content="http://www.pershing.com.tw/tw/pschackathon2018/images/psc-hackathon-banner_1280x480.png" />
+
+  <title>2018 北祥黑客松 那些科技 超有試!</title>
+
+  <link rel="SHORTCUT ICON" href="images/psc-hackathon-icon.png" />
+  <!-- css -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="vendor/chartist/chartist.min.css">
+  <!-- <link rel="stylesheet" href="css/animate.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Yahoo -->
+  <script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10000','properties':{'pixelId':'10065779'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
+  <!-- Google -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 826663782;
+  var google_conversion_label = "QmSvCJid_ooBEObGl4oD";
+  var google_remarketing_only = false;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/826663782/?label=QmSvCJid_ooBEObGl4oD&amp;guid=ON&amp;script=0"/>
+  </div>
+  </noscript>
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+  <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- logo -->
+        <div class="site-branding">
+          <a class="logo" href="index.html"><img class="header-title" src="images/psc-hackathon2018-header-title.png" alt=""></a>
+        </div>        
+        <button type="button" class="navbar-toggle collapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- /.navbar-header -->
+      <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="nav navbar-nav">
+          <!-- navigation menu -->
+          <li><a data-scroll href="#about">競賽簡介</a></li>
+          <li><a data-scroll href="#schedule">活動時程</a></li>
+          <li><a data-scroll href="#workshop">賽前講座</a></li>
+          <li><a data-scroll href="#awards">獎勵方式</a></li>
+          <li><a data-scroll href="#rules">競賽辦法</a></li>
+          <li><a href="http://www.pershing.com.tw/tw/pschackathon2017/#highlight" target="_blank">競賽回顧</a></li>
+          <li id="btn-cta"><a href="https://contest.bhuntr.com/tw/20224604171908102b" target="_blank">我要報名</a></li>
+        </ul>
+      </div><!-- /.collapse navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <header id="site-header" class="site-header valign-center">
+    <div class="intro animated zoomIn"></div>
+    <!-- 首頁圖案組合 -->
+    <div class="title-clips txt-apply-day"><img src="images/txt-apply-day_new.svg" alt=""></div>
+    <div class="title-clips txt-demo-day"><img src="images/txt-demo-day.svg" alt=""></div>
+    <div class="title-clips txt-awards"><img src="images/txt-awards.svg" alt=""></div>
+    <div class="title-clips title-icon-science"><img src="images/title-icon-science.png" alt=""></div>
+    <div class="title-clips title-icon-experiment"><img src="images/title-icon-experiment.png" alt=""></div>
+  </header>
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">競賽簡介</h3>
+          <h4>活動緣起</h4>  
+          <div class="row">
+            <div class="col-md-4 col-sm-6 president-quote">
+              <figure>
+                <img class="img-responsive" src="images/sean-photo.png" alt="創新是一種擁抱未來的態度">
+                <!-- <blockquote>創新，是一條必須持續走的路</blockquote> -->
+              </figure>
+            </div>
+            <div class="col-md-8 col-sm-6 president-intro">
+              <p>在這科技高速發展與技術日新月異的時代中，創意與理想的結合已是世界的潮流，越來越多極具創意的產品與解決方案已存在我們的生活當中。而黑客松一直是科技產業孕育創新科技的搖籃，並藉由此次黑客松競賽勾勒出夢想中的科技藍圖。</p>
+              <p><span class="txt-orange"><strong>「想像力沒有極限，創新就沒有極限，許多科技都是從小小的點子開始，進而改變整個世界」</strong></span>，北祥公司董事長陳欽祥表示，北祥持續鼓勵同仁與年輕學子勇於開創的精神，激發腦內革命與提升創新的能量，並藉由此次黑客松競賽實現創意與商業結合的可能性。</p></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <section id="schedule" class="section schedule">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">活動時程</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <div class="sch-item">
+            <div class="sch-order">1</div>
+            <div class="sch-title">報名起跑</div>
+            <div class="sch-date">10 / 01</div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <div class="sch-item">
+            <div class="sch-order">2</div>
+            <div class="sch-title"><a data-scroll href="#workshop">賽前講座 Workshop</a></div>
+            <div class="sch-date">10 / 27</div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <div class="sch-item">
+            <div class="sch-order">3</div>
+            <div class="sch-title">徵件截止<span style="display:block;font-size:15px;color: orange;margin-top:5px;">(延長)</span></div>
+            <div class="sch-date">11 / 12</div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <div class="sch-item">
+            <div class="sch-order">4</div>
+            <div class="sch-title">入圍決賽<br>名單公佈</div>
+            <div class="sch-date">11 / 16</div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <div class="sch-item">
+            <div class="sch-order">5</div>
+            <div class="sch-title">決賽同意書<br>回傳</div>
+            <div class="sch-date">11/16-11/23</div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <div class="sch-item">
+            <div class="sch-order">6</div>
+            <div class="sch-title">Demo Day<br>決賽</div>
+            <div class="sch-date">12 / 8</div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </section>
+  <section id="workshop" class="section workshop">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">賽前講座 Workshop</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>本次賽事中，將邀請學術與產業專家進行商品化開發、實務經驗與技術分享，詳細講座內容，請參閱 <a class="txt-link" href="https://pershing.kktix.cc/events/pschackathon2018" target="_blank">KKTIX平台</a>。本講座席次有限，主辦單位保留審核與拒絕之權利，採預約報名制，恕不受理現場報名。</p>
+          <table class="agenda-table">
+            <tr>
+              <td>13:30​ ~ 14:00​</td>
+              <td>報到​</td>
+            </tr>
+            <tr>
+              <td>14:00​ ~ 14:15​</td>
+              <td>活動辦法說明​</td>
+            </tr>
+            <tr>
+              <td>14:15​ ~ 15:00​</td>
+              <td>專題演講：創新到創意，如何商業化​ <span class="agenda-speaker">台北科技大學 陳英一 教授</span></td>
+            </tr>
+            <tr>
+              <td>15:00​ ~ 15:15​</td>
+              <td>Break Tea Time​</td>
+            </tr>
+            <tr>
+              <td>15:15​ ~ 15:45​</td>
+              <td>創意商業化之實務分享​ <span class="agenda-speaker">黑快馬 李經康 董事長​</span></td>
+            </tr>
+            <tr>
+              <td>15:45​ ~ 16:45​</td>
+              <td>技術交流:結合微軟相關技術，創造奇蹟 <span class="agenda-speaker">Microsoft AI Tech Sharing​</span></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <!-- <div class="workshop-reg"><a href="https://pershing.kktix.cc/events/pschackathon2018" class="btn btn-lg">我要報名參加講座</a></div> -->
+                <div class="workshop-reg"><a class="btn btn-lg disabled">講座已結束</a></div>
+              </td>
+            </tr>
+          </table>
+          
+        </div>
+        <div class="col-md-6 workshop-info">
+          <h4>Workshop 時間</h4>
+          <span >2018/10/27</span>
+          <h4>Workshop 地點</h4>
+          <address>
+            <p><strong>三創生活園區11樓 Space A​</strong><br> 台北市中正區市民大道三段 2號 11樓</p>
+          </address>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d794.9104504081621!2d121.53067060479879!3d25.045247036277768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97b582d5a73%3A0x9b1e56ab48807d62!2z5LiJ5Ym155Sf5rS75ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1537957692485" width="100%" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="awards" class="section awards">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">獎勵方式</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h4>競賽獎項</h4>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <div class="awa-item">
+            <div class="awa-title">金賞(1隊)</div>
+            <div class="awa-content">
+              <span class="awa-ntd">新台幣</span>
+              <span class="awa-amount">60,000</span>元
+            </div>
+          </div><!-- /.awa-item -->
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <div class="awa-item">
+            <div class="awa-title">銀賞(1隊)</div>
+            <div class="awa-content">
+              <span class="awa-ntd">新台幣</span>
+              <span class="awa-amount">30,000</span>元
+            </div>
+          </div><!-- /.awa-item -->
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <div class="awa-item">
+            <div class="awa-title">銅賞(2隊)</div>
+            <div class="awa-content">
+              <span class="awa-ntd">新台幣</span>
+              <span class="awa-amount">20,000</span>元
+            </div>
+          </div><!-- /.awa-item -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="awa-item">
+            <div class="awa-title">最佳人氣獎</div>
+            <div class="awa-content">
+              <span class="awa-ntd">新台幣</span>
+              <span class="awa-amount">10,000</span>元
+            </div>
+          </div><!-- /.awa-item -->
+        </div>
+        <div class="col-md-6">
+          <div class="awa-item">
+            <div class="awa-title">佳作獎</div>
+            <div class="awa-content">
+              <span class="awa-ntd">新台幣</span>
+              <span class="awa-amount">5,000</span>元
+            </div>
+          </div><!-- /.awa-item -->
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="pscript">
+            <li>競賽獎金將依中華民國稅法照給付金額扣繳 10%。</li>
+            <li>以上獲獎團隊，頒發每位隊員獎狀乙紙，獲獎學生成員將獲得後續「企業實習」機會。</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="breakline">
+
+      <div class="row">
+        <div class="col-md-6">
+          <h4>評分準則</h4>
+          <div class="ct-chart ct-golden-section"></div>
+          <div class="row chart-label">
+            <div class="col-sm-6">創新與創意 <span>50%</span></div>
+            <div class="col-sm-6">技術或商業應用可行性 <span>30%</span></div>
+            <div class="col-sm-6">簡報內容與表達 <span>10%</span></div>
+            <div class="col-sm-6">概念與構想完整性 <span>10%</span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>展示作品規範</h4>
+          <ol>
+            <li>作品成果內容與形式不拘，並保證為原創及未公開發表之新作，且無抄襲及仿冒之事，若有侵害第三者之權益損失，將取消參賽資格並由創作者自行負擔法律責任，不得異議。</li>
+            <li>若為應用開發，不限定程式語言，可運用 Open Source 或 Open Data，其需符合開源授權為 MIT、BSD、Apache 2.0 程式碼使用規範</li>
+            <li>應用開發限由同隊人員合力完成。除符合上述開源程式碼使用規範外不得抄襲他人之程式碼，違者取消參賽資格</li>
+          </ol>
+        </div>
+      </div>
+      <hr class="breakline">
+    </div>
+  </section>
+  
+  <section id="rules" class="section rules">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">競賽辦法</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h4>競賽主題</h4>
+          <p>本大賽以「雲端創新服務」、「人工智慧應用」以及「Modern Office」三大主題，以創造未來並具有競爭力和商業化潛力的產品原型為導向，邀請充滿無限想法及創客精神的你一起來探索！</p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="rule-item">
+                <img src="images/icon-cloud.svg" alt="雲端創新服務">
+                <h5>雲端創新服務</h5>
+                <p>雲端當道，如何從「雲端」上尋找到創新利基呢？歡迎參賽者結合雲端技術，創造出更方便、更有效率的資訊服務。</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="rule-item">
+                <img src="images/icon-ai.svg" alt="人工智慧應用">
+                <h5>人工智慧應用</h5>
+                <p>隨著 AI 技術以及語意分析技術的發展，對話式商務快速崛起，請參賽者利用 OpenData 以及 API 打造更善解人意的 AI 服務。</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="rule-item">
+                <img src="images/icon-modern-office.svg" alt="Modern Office">
+                <h5>Modern Office</h5>
+                <p>團隊的共同作業習慣可促進或是阻礙團隊工作。參賽者可嘗試改善作業流程，打造更智慧的工作環境。</p>
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col-md-12">
+          <h4>參賽資格</h4>
+          <p>你的腦叫你一直動，只要你有任何點子想法想改變現有世界，歡迎組隊來試試你的新點子，實現你的夢想藍圖!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="rule-team">
+            <div class="rule-team-title">學生成員</div>
+            <div class="rule-team-content">全國大專院校在學學生、研究所碩、博士生 (以上均不含在職研究生) 組隊</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="rule-team">
+            <div class="rule-team-title">員工成員</div>
+            <div class="rule-team-content">北祥公司正職員工</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="rule-team">
+            <div class="rule-team-title">北祥合作夥伴與客戶</div>
+            <div class="rule-team-content">與北祥有商業往來的客戶或商業合作夥伴</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="pscript">
+            <li>每隊由 3-5 位組隊報名。</li>
+            <li>學生成員組隊報名時須具備學生身分，可跨科系及跨校。</li>
+            <li>員工成員組隊報名時須具備北祥公司正職員工身分。</li>
+            <li>組隊成員於報名截止日後，不得更換。</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="breakline">
+    </div>
+  </section>
+  <section id="steps">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="rule-steps-wrap">
+            <span class="rule-step-order">1</span>
+            <h4>初選徵件</h4>
+            <div class="col-md-12">
+              <p>報名前，請先詳閱 <a class="txt-link" href="downloads/psc-hackathon2018-rule.pdf">活動辦法</a>。報名團隊透過 <a class="txt-link" href="https://contest.bhuntr.com/tw/20224604171908102b/howto" target="_blank"> 「獎金獵人」 活動報名平台</a> 登記報名，依登記完成通知信，上傳相關文件、資料，並經主辦單位審核無誤後 Email通知，始為報名成功。</p>
+            </div>
+          </div><!-- /.rule-steps-wrap -->
+        </div>
+        
+        <div class="col-md-12">
+          <div class="rule-steps-wrap">
+            <span class="rule-step-order">2</span>
+            <h4>入圍決賽公佈</h4>
+            <div class="col-md-12">
+              <p>2018 年 11 月 16 日中午 12:00 公告於活動官網，主辦單位將以電話及 E-mail 通知入圍團隊，未入圍團隊恕不另行通知。</p>
+              <p>初審通過之團隊須於 2018年 11月 16日 至 2018年 11月 23日下午 18:00 止，完成繳交保證金 新台幣 1,000元，並回傳 「決賽同意書」與「繳費證明」，否則視同棄賽。</p>
+              <hr class="breakline">
+              <ul class="pscript">
+                <li><a class="txt-link" href="downloads/psc-hackathon2018-agreement.pdf"><strong>決賽同意書</strong></a>：請上傳掃描檔。</li>
+                <li><strong>繳費證明</strong>：請上傳掃描檔。</li>  
+                <li>保證金於各該隊完成全部賽程，憑據退還，若中途棄賽，則予以沒收。</li>
+              </ul>
+            </div>
+          </div><!-- /.rule-steps-wrap -->
+        </div>
+        <div class="col-md-12">
+          <div class="rule-steps-wrap">
+            <span class="rule-step-order">3</span>
+            <h4>決賽 Demo Day</h4>
+            <div class="col-md-4">
+              <div class="txt-orange"><strong>時間：</strong></div>2018/12/8 (六) 09:30~18:30
+            </div>
+            <div class="col-md-4">
+              <div class="txt-orange"><strong>地點：</strong></div>三創育成 11F <br>台北市中正區市民大道三段 2號 11樓
+            </div>
+            <div class="col-md-4">
+              <div class="txt-orange"><strong>競賽方式：</strong></div>每支參賽隊伍將有10分鐘時間，展示成果內容與形式不拘，並於當天依評審結果公佈競賽成績，頒發獎項。</div>
+            <div class="col-md-12">
+              <hr class="breakline">
+              <ul class="pscript">
+                <li>參賽作品須符合各注意事項之規定，倘若作品(含報名資料、簡報、書面說明等項目)未符合競賽規格，將以棄權論。如侵害他人或違法除得以取消獲獎資格、追回獎金外，一切法律責任概由參賽團隊自行負責。</li>
+                <li>主辦單位保有本活動辦法之最終解釋及更改權利，活動內容如有任何異動將公告於活動網站，不再另行通知。</li>
+              </ul>
+            </div>
+            
+          </div><!-- /.rule-steps-wrap -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="breakline">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>注意事項</h4>
+        <ol class="attention">
+          <li>參加者於參加本活動之同時，即同意接受本活動之活動辦法與注意事項之規範，如有違反，主辦單位及協辦單位得取消其參加或得獎資格，並就因此所生之損害，得向參加者請求損害賠償。</li>
+          <li>參加者保證所有填寫或提出之資料均為真實且正確，且未冒用或盜用任何第三人之資料。如有不實或不正確之情事，將被取消參加或得獎資格。
+            <ul>
+              <li>如因此致主辦單位及協辦單位無法聯絡參賽隊伍，則視同放棄進入決賽資格，主辦單位有權以其他參賽隊伍之初賽成績予以遞補。</li>
+              <li>如因此致主辦單位及協辦單位無法通知其得獎訊息時，主辦單位及協辦單位不負任何責任，且如有致損害於主辦單位及協辦單位或其他任何第三人，參加者應負一切相關責任。</li>
+            </ul>
+          </li>
+          <li>本活動之保證金，待各隊全程參與活動，經主辦單位確認無誤，得於活動當日結束後以現金無息退還。 </li>
+          <li>本活動若徵求參加者提供圖文、照片、影片及其他資料等內容予主辦單位及協辦單位，參加者需同意下列事項:
+            <ul>
+              <li>參加者保證提供予本活動之圖文、照片、影片及其他資料，並無侵害他人權利(包括但不限於智慧財產權、專利權、商標權、肖像權及隱私權)或違反法令之情事。</li>
+              <li>如有違反之虞，主辦單位及協辦單位得立即移除相關內容並取消參加資格與得獎資格，參加者並應自負相關法律責任，與本活動主辦單位及協辦單位無涉。如因前項保證不實導致第三人向主辦單位及協辦單位主張權利，參加者應為甲方排除並負擔全部處理費用，倘主辦單位及協辦單位因此遭受損失，參加者亦應就該損失負賠償之責。</li>
+              <li>主辦單位及協辦單位對參加者所提供之圖文、照片、影片及其他資料有審查權， 若不符合本活動之規定，經查證屬實，得取消其參加與得獎資格。</li>
+            </ul>
+          </li>
+          <li>凡經報名參賽，參加者即同意主辦單位得檢視參賽作品之相關內容並同意授權主辦單位及協辦單位得為宣傳或其他與本活動相關之目的，得合法使用及節錄參賽作品並做成相關宣傳活動資料，主辦單位無須另行通知參加者或支付任何權利金，惟主辦單位於使用時應註明參賽隊伍名稱或其成員姓名。</li>
+          <li>各隊參賽作品之智慧財產權屬參賽隊伍之成員所有，參賽隊伍應自行處理與其權利相關之申請或註冊程序。</li>
+          <li>參加者參賽作品必須為原創作品，若有抄襲或為已推出之服務等情事，一經查獲或舉 發確認屬實，將取消參賽及得獎資格。</li>
+          <li>參加者參賽作品凡涉有抄襲或侵害他人著作權之情形，除取消得獎資格、得獎者追回獎金外，主辦單位不承擔肖像權、名譽權、隱私權、著作權、商標權等糾紛而產生的法律責任，其法律責任由參賽者本人自行承擔。倘致主辦單位受有損害者，參賽者應對主辦單位負擔賠償。</li>
+          <li>本活動各獎項得獎者，必須繳交相關身分證明文件影本及其他必要文件，若有不全、有誤、造假者，主辦單位有權取消得獎資格。倘致主辦單位受有損害者，該獎項得主應負相關法律責任。</li>
+          <li>參加者同意主辦單位及協辦單位於辦理本活動得獎聯絡事宜、活動分析或其他活動網頁上所聲明之特定使用目的範圍內，使用參加者所填寫之個人資料。主辦單位及協辦單位並得委託協力廠商負責執行前述各項事務，該廠商得於必要範圍內使用參加者之個人資料。</li>
+          <li>本活動獎項以公佈於本網站上的資料為準，如遇不可抗力之因素，主辦單位及協辦單位保留更換其他等值獎項之權利。各獎項若無適當得獎作品，則該獎項可從缺。</li>
+          <li>活動獎項價值超過新台幣20,000元者，得獎者應自行負擔10%之機會中獎所得稅，得獎者為非中華民國境內居住之個人，須自行負擔獎金20%之機會中獎所得稅稅金。本活動有權自應給付獎金中逕予扣除相關所得稅。 </li>
+          <li>參加者如因參加本活動而遭受任何損失，主辦單位及協辦單位及相關之母 公司、子公司、關係企業、員工、及代理商不負任何責任。一旦得獎者領取獎品後，若有遺失或被竊，主辦單位及協辦單位等不發給任何證明或補償。</li>
+          <li>如本活動因不可抗力之特殊原因無法執行時，主辦單位及協辦單位有權決定取消、終止、修改或暫停本活動。</li>
+          <li>為記錄本活動，主辦單位所拍攝之相關照片及影像，參賽者必須同意無償提供為進行本活動或推廣本活動使用、編輯、印刷、展示、宣傳或公開上述個人肖像、姓名及聲音等。 </li>
+          <li>本活動內容以主辦單位最新公告為準，若有其他未盡事宜，主辦單位並保留所有相關活動最終解釋權與活動更改之權利。</li>       
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- scroll up-->
+  <div class="scrollup">
+      <a href="#"><i class="ion-chevron-up"></i></a>
+  </div><!-- End off scroll up -->
+  
+  <!-- 決賽名單 -->
+  <!-- <a data-scroll href="#workshop" class="sidebtn_workshop small"></a>  -->
+  <!-- end of 決賽名單 -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="site-info">主辦單位: <img src="images/PSC_logo_white.png" alt="北祥股份有限公司"></p>
+          <p class="site-info">活動聯絡: <a class="psc-team txt-link" href="mailto:hackathon@pershing.com.tw">北祥黑客松活動小組</a></p>
+        </div>
+        <div class="col-sm-6">
+          <div class="psc-links">
+            <a class="psc-website" href="http://www.pershing.com.tw">www.pershing.com.tw</a>
+            <ul class="social-block">
+              <li><a href="https://www.facebook.com/psc.taiwan/"><i class="ion-social-facebook"></i></a></li>
+            </ul>
+          </div><!-- /.psc-links -->
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="rwd-menu" >
+    <!-- <img src="http://placehold.it/240x64" alt=""> -->
+    <a href="#" class="smenu-close"></a>
+    <ul class="rwd-menu-list">
+      <!-- navigation menu -rwd -->
+      <li><a data-scroll href="#about">競賽簡介</a></li>
+      <li><a data-scroll href="#schedule">活動時程</a></li>
+      <li><a data-scroll href="#workshop">賽前講座</a></li>
+      <li><a data-scroll href="#awards">獎勵方式</a></li>
+      <li><a data-scroll href="#rules">競賽辦法</a></li>
+      <li><a href="http://www.pershing.com.tw/tw/pschackathon2017/#highlight">競賽回顧</a></li>
+      <!-- <li><a data-scroll href="#final-list">入圍決賽團隊</a></li> -->
+      <li id="rwd-btn-cta"><a href="https://contest.bhuntr.com/tw/20224604171908102b" target="_blank">我要報名</a></li>
+    </ul>
+  </div><!-- /.rwd-menu -->
+  <!-- script -->
+  <script src="vendor/jquery/dist/jquery.min.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="vendor/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+  <script src="vendor/chartist/chartist.min.js"></script>
+  <script src="vendor/tilt/tilt.jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <!--Google Analytics-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-4079900-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+    $('#site-header').tilt({
+        maxTilt: 5,
+        perspective: 500
+    })
+  </script>
+</body>
+
+</html>
