@@ -132,6 +132,7 @@
  */
 .awards {
 	background: url(../images/bkg-doodles.png) no-repeat center center / contain;
+	background: $purple-darker;
 }
 .awa-item {
 	border-bottom: 5px solid $main-blue;
@@ -325,55 +326,53 @@ ol.attention {
 	}
 }
 
-
 /* 
- * Section: FAQ
+ * Section: Judge
  */
-
-// .faq {
-// 	.panel-heading {
-// 	    cursor: pointer;
-// 	}
-
-// 	.faq-toggle.collapsed::before {
-// 		font-family: "Ionicons";
-// 		content: "\f218";
-// 		transition: 0.5s linear ease-out;
-// 		position: absolute;
-// 		left: 15px;
-// 	}
-
-// 	.faq-toggle::before {
-// 		position: absolute;
-// 		left: 15px;
-// 		font-family: "Ionicons";
-// 		content: "\f209";
-// 	}
-
-// 	.panel-group .panel+.panel {
-// 		margin-top: 15px;
-// 	}
-
-// 	.panel-default>.panel-heading {
-// 		color: #FFF;
-// 		background-color: #000000;
-// 		border-color: #000;
-// 		border-radius: 0;
-// 		padding: 0;
-
-// 		a {
-// 			position: relative;
-// 			display: block;
-// 			text-decoration: none;
-// 			padding: 15px 15px 15px 35px;
-// 		}
-// 	}
-// }
-
-@media (min-width: 768px) {
+.judge-wrap {
+	display: block;
+	float: left;
+	margin-bottom: 6px;
+	padding: 6px;
+	width: calc(100% / 5);
+	//text-align: center;
+	img {
+		margin-bottom: 10px;
+		width: 100%;
+		opacity: .9;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.judge-name {
+		background: purple;
+		font-size: 32px;
+		font-weight: bold;
+		position: absolute;
+		margin-top: -1em;
+		padding: 0 8px;
+		@include linear-gradient(left, $purple-darker, $purple-dark);
+	}
+	.judge-title {
+		color: $main-orange;
+		font-size: 15px;
+		font-weight: bold;
+		margin-top: 25px;
+		padding-left: 10px;
+		span {
+			color: $main-blue;
+			display: block;
+			font-weight: normal;
+		}
+	}
 }
-
-@media (min-width: 992px) {
+@media (max-width: 992px) {
+	.judge-wrap {
+		width: calc(100% / 3);
+		.judge-name {
+			font-size: 28px;
+		}
+	}
 }
 
 @media (max-width: 480px) {
@@ -402,6 +401,16 @@ ol.attention {
 		//width: 160px;
 		img {
 			max-width: 160px;
+		}
+	}
+	.judge-wrap {
+		padding: 10px;
+		width: calc(100% / 2);
+		.judge-name {
+			font-size: 24px;
+		}
+		.judge-title {
+			font-size: 14px;
 		}
 	}
 }
