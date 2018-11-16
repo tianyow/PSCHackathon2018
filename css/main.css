@@ -423,7 +423,7 @@ hr.breakline {
 .agenda-table {
   background: #301152;
   border-collapse: collapse;
-  border: 2px solid #EF856E;
+  border: 3px solid #EF856E;
   font-family: "Roboto", "微軟正黑體", "Microsoft JhengHei", sans-serif;
   width: 100%;
 }
@@ -1390,6 +1390,13 @@ ol.attention {
   color: #70C7DA;
   display: block;
   font-weight: normal;
+}
+
+/* 
+ * Section: Location
+ */
+.location {
+  background: #301152;
 }
 
 @media (max-width: 992px) {

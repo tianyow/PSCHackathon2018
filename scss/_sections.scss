@@ -366,6 +366,12 @@ ol.attention {
 		}
 	}
 }
+/* 
+ * Section: Location
+ */
+.location {
+	background: $purple-darker;
+}
 @media (max-width: 992px) {
 	.judge-wrap {
 		width: calc(100% / 3);
