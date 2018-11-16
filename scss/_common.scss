@@ -196,6 +196,9 @@ hr.breakline {
 .txt-blue {
 	color: $main-blue;
 }
+.txt-gold {
+	color: $gold;
+}
 /* 
  * 3.1 Helper Class: font-weight
  */
@@ -340,8 +343,8 @@ hr.breakline {
 }
 
 /* 決賽名單 */
-.sidebtn_workshop {
-	background: url(../images/sidebtn_workshop.png);
+.sidebtn_final_list {
+	background: url(../images/sidebtn_final_list.png);
 	background-size: cover;
 	display: block;
 	position: fixed;
@@ -351,36 +354,36 @@ hr.breakline {
 	right: 30px;
 	margin-top: -90px;
 	z-index: 9;
-	opacity: .7;
+	opacity: .9;
 	@include transition(all, .3s, linear);
 	&.small {
-		width: 132px;
-		height: 105px;
+		width: 160px;
+		height: 127px;
 	}
 	&:hover {
 		opacity: 1;
 	}
 }
 .flist-wrap {
-	background: $purple-dark;
-	border-bottom: 5px solid $main-orange;
+	background: $blue-dark;
+	border-bottom: 3px solid $main-gray;
 	margin-bottom: 20px;
 	position: relative;
 	.flist-num {
 		span {
-			background: $purple-dark;
+			background: $blue-dark;
 			color: $main-blue;
 			font-size: 13px;
 			padding: 3px 10px;
 			position: relative;
-			margin-left: 10px;
-			@include borderRadius(20px);
+			//margin-left: 10px;
+			//@include borderRadius(20px);
 		}
 		&::before {
 			content: '';
-			background: $main-orange;
+			background: $gold;
 			display: inline-block;
-			height: 3px;
+			height: 2px;
 			position: absolute;
 			left: 0px;
 			top: 15px;
@@ -392,27 +395,30 @@ hr.breakline {
 		padding: 6px;
 		width: 100%;
 		span {
-			background: #fff;
-			border: 1px solid $main-blue;
-			color: $purple-dark;
+			//background: #fff;
+			border: 1px solid $gold;
+			color: #eee;
 			display: table-cell;
 			font-size: 21px;
 			font-weight: bold;
 			height: 100px;
 			text-align: center;
+			padding: 0 5px;
 			vertical-align: middle;
 			width: 100%;
 		}
 	}
 }
 .flist-team-num {
-  color: #ff8a8a;
+	background: $blue-dark;
+  color: $main-orange;
   font-family: "Roboto", Arial, sans-serif;
   text-align:center;
-  font-size: 36px;
+  font-size: 32px;
+  line-height: 1;
   position: absolute;
-  right: 10px;
-  top: 9px;
+  right: 15px;
+  top: 20px;
 }
 /* 議程表 */
 .agenda-table {
@@ -462,13 +468,13 @@ hr.breakline {
 	}
 }
 @media (max-width: 990px) {
-	.sidebtn_workshop {
-		width: 176px;
-		height: 140px;
-		right: 0px;
+	.sidebtn_final_list{
 		&.small {
-			top: auto;
-			bottom: 10%;
+			width: 132px;
+			height: 105px;
+			right: 0px;
+			top: 25%;
+			//bottom: 10%;
 		}
 	}
 }
@@ -500,8 +506,8 @@ hr.breakline {
 			top: 200px;
 		}
 	}
-	.sidebtn_workshop {
-		display: none;
+	.sidebtn_final_list {
+		//display: none;
 	}
 }
 

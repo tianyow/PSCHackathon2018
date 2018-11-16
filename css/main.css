@@ -208,6 +208,10 @@ hr.breakline {
   color: #70C7DA;
 }
 
+.txt-gold {
+  color: #dbb100;
+}
+
 /* 
  * 3.1 Helper Class: font-weight
  */
@@ -336,8 +340,8 @@ hr.breakline {
 }
 
 /* 決賽名單 */
-.sidebtn_workshop {
-  background: url(../images/sidebtn_workshop.png);
+.sidebtn_final_list {
+  background: url(../images/sidebtn_final_list.png);
   background-size: cover;
   display: block;
   position: fixed;
@@ -347,43 +351,39 @@ hr.breakline {
   right: 30px;
   margin-top: -90px;
   z-index: 9;
-  opacity: 0.7;
+  opacity: 0.9;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.sidebtn_workshop.small {
-  width: 132px;
-  height: 105px;
+.sidebtn_final_list.small {
+  width: 160px;
+  height: 127px;
 }
-.sidebtn_workshop:hover {
+.sidebtn_final_list:hover {
   opacity: 1;
 }
 
 .flist-wrap {
-  background: #3A2B84;
-  border-bottom: 5px solid #EF856E;
+  background: #1b1464;
+  border-bottom: 3px solid #DCDDDD;
   margin-bottom: 20px;
   position: relative;
 }
 .flist-wrap .flist-num span {
-  background: #3A2B84;
+  background: #1b1464;
   color: #70C7DA;
   font-size: 13px;
   padding: 3px 10px;
   position: relative;
-  margin-left: 10px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
 }
 .flist-wrap .flist-num::before {
   content: "";
-  background: #EF856E;
+  background: #dbb100;
   display: inline-block;
-  height: 3px;
+  height: 2px;
   position: absolute;
   left: 0px;
   top: 15px;
@@ -395,26 +395,28 @@ hr.breakline {
   width: 100%;
 }
 .flist-wrap .flist-team span {
-  background: #fff;
-  border: 1px solid #70C7DA;
-  color: #3A2B84;
+  border: 1px solid #dbb100;
+  color: #eee;
   display: table-cell;
   font-size: 21px;
   font-weight: bold;
   height: 100px;
   text-align: center;
+  padding: 0 5px;
   vertical-align: middle;
   width: 100%;
 }
 
 .flist-team-num {
-  color: #ff8a8a;
+  background: #1b1464;
+  color: #EF856E;
   font-family: "Roboto", Arial, sans-serif;
   text-align: center;
-  font-size: 36px;
+  font-size: 32px;
+  line-height: 1;
   position: absolute;
-  right: 10px;
-  top: 9px;
+  right: 15px;
+  top: 20px;
 }
 
 /* 議程表 */
@@ -467,14 +469,11 @@ hr.breakline {
   }
 }
 @media (max-width: 990px) {
-  .sidebtn_workshop {
-    width: 176px;
-    height: 140px;
+  .sidebtn_final_list.small {
+    width: 132px;
+    height: 105px;
     right: 0px;
-  }
-  .sidebtn_workshop.small {
-    top: auto;
-    bottom: 10%;
+    top: 25%;
   }
 }
 @media (max-width: 767px) {
@@ -510,10 +509,6 @@ hr.breakline {
   }
   .btn_final_list.small {
     top: 200px;
-  }
-
-  .sidebtn_workshop {
-    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -922,7 +917,7 @@ hr.breakline {
   .txt-awards {
     width: calc(260px * 0.6);
     right: 1%;
-    top: 25%;
+    top: 40%;
   }
 
   .title-icon-science {
@@ -963,7 +958,7 @@ hr.breakline {
   .txt-awards {
     width: calc(260px * 0.5);
     right: 1%;
-    top: 25%;
+    top: 32%;
   }
 
   .title-icon-science {
@@ -1099,7 +1094,7 @@ hr.breakline {
  * Section: final-list
  */
 .final-list {
-  background: #3A2B84;
+  background: #301152;
   padding-bottom: 12px;
 }
 .final-list h3 {
