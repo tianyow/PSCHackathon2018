@@ -271,6 +271,9 @@ hr.breakline {
 .btn-orange {
 	color: #111;
 	background: orange;
+	&:hover {
+		background: $main-orange;
+	}
 }
 
 /* 

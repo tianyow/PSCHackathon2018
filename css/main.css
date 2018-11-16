@@ -274,6 +274,9 @@ hr.breakline {
   color: #111;
   background: orange;
 }
+.btn-orange:hover {
+  background: #EF856E;
+}
 
 /* 
  * 3.5 Helper Class: background
@@ -1103,6 +1106,13 @@ hr.breakline {
 }
 .final-list p {
   color: #eee;
+}
+
+.btn-demoday {
+  border-radius: 25px;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 10px 20px;
 }
 
 .agenda {
