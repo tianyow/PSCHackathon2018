@@ -618,10 +618,10 @@ hr.breakline {
   background: #1b1464 !important;
 }
 
-#rwd-btn-cta {
+.rwd-btn-cta {
   margin: 0 auto !important;
 }
-#rwd-btn-cta a {
+.rwd-btn-cta a {
   color: #fff !important;
 }
 

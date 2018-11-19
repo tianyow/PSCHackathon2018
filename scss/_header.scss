@@ -89,14 +89,14 @@
 		}
 	}
 }
-#rwd-btn-cta {
+.rwd-btn-cta {
 	margin: 0 auto !important;
 	//width: 90%;
 	a {
 		// background: $orange;
-		// border: none;
+		//border: 1px solid $main-orange;
 		color: #fff !important;
-		// @include borderRadius(60px);
+		//@include borderRadius(60px);
 		// &:hover {
 		// 	background: $orange;
 		// }
