@@ -9,7 +9,7 @@
 * {
 	box-sizing: border-box;
 	&::selection {
-		background: $purple-darker;
+		background: $pink-neon;
 	}
 }
 html {
@@ -198,6 +198,9 @@ hr.breakline {
 }
 .txt-gold {
 	color: $gold;
+}
+.txt-yellow {
+	color: $yellow;
 }
 /* 
  * 3.1 Helper Class: font-weight
@@ -439,13 +442,33 @@ hr.breakline {
 		font-size: 28px;
 		text-align: center;
 	}
-	td:first-child {
-		color: $main-orange;
-		text-align: center;
-		//width: 120px;
+	td {
+		text-align: left;
+		&.label-time {
+			color: $main-orange;
+			text-align: center;
+			//width: 120px;
+		}
+		// &:last-child {
+		// 	color: $main-gray;
+		// }
 	}
-	td:last-child {
-		color: $main-gray;
+	// 活動場地標註
+	.place-badge {
+		display: inline;
+		//background: $yellow;
+		border: 1px solid $yellow;
+		color: $yellow;
+		font-size: 13px;
+		//font-weight: bold;
+		padding: 3px 8px;
+		float: right;
+		margin-right: 5px;
+		@include borderRadius(15px);
+
+		@media (max-width: 480px) {
+			font-size: 12px;
+		}
 	}
 }
 .agenda-post {
@@ -457,6 +480,17 @@ hr.breakline {
 	color: $main-blue;
 	display: block;
 	font-size: 14px;
+}
+.entry-route {
+
+	.entry-time {
+		color: $gold;
+		font-size: 26px;
+		margin-bottom: 0;
+	}
+	img {
+		width: 100%;
+	}
 }
 
 @media (min-width: 768px) {

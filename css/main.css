@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 *::selection {
-  background: #301152;
+  background: #ff7bac;
 }
 
 html {
@@ -210,6 +210,10 @@ hr.breakline {
 
 .txt-gold {
   color: #dbb100;
+}
+
+.txt-yellow {
+  color: #f3ce4c;
 }
 
 /* 
@@ -439,12 +443,29 @@ hr.breakline {
   font-size: 28px;
   text-align: center;
 }
-.agenda-table td:first-child {
+.agenda-table td {
+  text-align: left;
+}
+.agenda-table td.label-time {
   color: #EF856E;
   text-align: center;
 }
-.agenda-table td:last-child {
-  color: #DCDDDD;
+.agenda-table .place-badge {
+  display: inline;
+  border: 1px solid #f3ce4c;
+  color: #f3ce4c;
+  font-size: 13px;
+  padding: 3px 8px;
+  float: right;
+  margin-right: 5px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+@media (max-width: 480px) {
+  .agenda-table .place-badge {
+    font-size: 12px;
+  }
 }
 
 .agenda-post {
@@ -457,6 +478,15 @@ hr.breakline {
   color: #70C7DA;
   display: block;
   font-size: 14px;
+}
+
+.entry-route .entry-time {
+  color: #dbb100;
+  font-size: 26px;
+  margin-bottom: 0;
+}
+.entry-route img {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -1407,6 +1437,19 @@ ol.attention {
  */
 .location {
   background: #301152;
+}
+.location .section-title {
+  margin-bottom: 10px;
+}
+.location .traffic {
+  color: #f3ce4c;
+  font-size: 20px;
+  font-weight: bold;
+}
+.location ul {
+  font-size: 15px;
+  list-style: none;
+  padding-left: 0;
 }
 
 @media (max-width: 992px) {
