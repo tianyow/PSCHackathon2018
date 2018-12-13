@@ -23,6 +23,7 @@ body {
 	font-size: $default-font;
 	line-height: 1.6;
 	position: relative;
+	overflow-x: hidden;
 	// -webkit-font-smoothing: antialiased;
 	@include linear-gradient(to bottom right, $purple-light, $purple-dark);
 }
@@ -349,9 +350,8 @@ hr.breakline {
 }
 
 /* 決賽名單 */
-.sidebtn_final_list {
-	background: url(../images/sidebtn_final_list.png);
-	background-size: cover;
+.sidebtn_final_list,
+.sidebtn_winners {
 	display: block;
 	position: fixed;
 	width: 220px;
@@ -369,6 +369,14 @@ hr.breakline {
 	&:hover {
 		opacity: 1;
 	}
+}
+.sidebtn_final_list {
+	background: url(../images/sidebtn_final_list.png);
+	background-size: cover;
+}
+.sidebtn_winners {
+	background: url(../images/sidebtn_winners.png);
+	background-size: cover;
 }
 .flist-wrap {
 	background: $blue-dark;
@@ -505,7 +513,8 @@ hr.breakline {
 	}
 }
 @media (max-width: 990px) {
-	.sidebtn_final_list{
+	.sidebtn_final_list,
+	.sidebtn_winners {
 		&.small {
 			width: 132px;
 			height: 105px;
@@ -554,5 +563,12 @@ hr.breakline {
 	}
 	.col-xs-* {
 		padding: 10px;
+	}
+	.sidebtn_winners {
+		&.small {
+			top: auto;
+			right: -50px;
+			bottom: 250px;
+		}
 	}
 }

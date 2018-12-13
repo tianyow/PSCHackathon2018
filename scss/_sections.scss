@@ -392,8 +392,138 @@ ol.attention {
 		padding-left: 0;
 	}
 }
-
-
+/* 
+ * Section: Winners
+ */
+.winners {
+	background: $purple-darker;
+	.section-title {
+		margin-bottom: 20px;
+	}
+}
+.winner-wrap {
+	border: 4px solid $gold;
+	box-sizing: border-box;
+	color: #fff !important;
+	margin-bottom: 20px;
+	padding: 10px;
+	position: relative;
+	width: 100%;
+	height: 260px;
+	@include transition(all, .3s, linear);
+	&::before {
+		content:'';
+		background: url('../images/winner-title-bkg.png') repeat-x;
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		height: 90px;
+		z-index: 0;
+		opacity: .7;
+	}
+	&:hover {
+		transform: scale(1.05);
+		opacity: 1;
+	}
+	&.gold {
+		background: url('../highlights/20181208_hackathon_gold_award.jpg') no-repeat;
+		background-size: cover;
+		background-position: top center;
+		.winner-award {
+			background: $gold;
+		}
+	}
+	&.silver {
+		background: url('../highlights/20181208_hackathon_silver_award.jpg') no-repeat;
+		background-size: cover;
+		background-position: top center;
+		.winner-award {
+			background: #999;
+		}
+	}
+	&.bronze1 {
+		background: url('../highlights/20181208_hackathon_bronze_award-1.jpg') no-repeat;
+		background-size: cover;
+		background-position: top center;
+		.winner-award {
+			background: $orange;
+		}
+	}
+	&.bronze2 {
+		background: url('../highlights/20181208_hackathon_bronze_award-2.jpg') no-repeat;
+		background-size: cover;
+		background-position: top center;
+		.winner-award {
+			background: $orange;
+		}
+	}
+	&.popular {
+		background: url('../highlights/20181208_hackathon_best_popular_award.jpg') no-repeat;
+		background-size: cover;
+		background-position: top center;
+		.winner-award {
+			background: $pink-neon;
+		}
+	}	&.honorable {
+		background: url('../highlights/20181208_hackathon_honorable_award.jpg') no-repeat;
+		background-size: cover;
+		background-position: top center;
+		.winner-award {
+			background: $blue-navy;
+		}
+	}
+	.winner-award {
+		color: white;
+		display: inline-block;
+		font-size: 15px;
+		padding: 2px 10px;
+	}
+	.winner-team {
+		font-size: 36px;
+		position: absolute;
+		bottom: 15px;
+		right: 0px;
+		padding: 0 10px;
+	}
+	.winner-work {
+		position: absolute;
+		font-size: 16px;
+		bottom: 0px;
+		right: 0px;
+		padding: 0 10px;
+	}
+}
+.demoday-video-link {
+	border: 3px solid #fff;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 40px;
+	padding: 15px 20px;
+	text-decoration: none;
+	&:hover {
+		border-color: $pink-neon;
+		color: $pink-neon;
+		text-decoration: none;
+	}
+}
+.table-winners {
+	border: 1px solid $gold;
+	width: 100%;
+	th, td {
+		border: 1px solid darken($gold,20%);
+		padding: 6px 10px;
+	}
+	th {
+		background: $gold;
+	}
+	tr:hover {
+		background: $purple-dark;
+	}
+}
 
 @media (max-width: 992px) {
 	.judge-wrap {
@@ -441,6 +571,17 @@ ol.attention {
 		.judge-title {
 			font-size: 14px;
 		}
+	}
+	.winner-wrap {
+		height: 200px;
+		.winner-team {
+			font-size: 28px;
+		}
+	}
+	.demoday-video-link {
+		display: block;
+		font-size: 20px;
+		margin-top: 20px;
 	}
 }
 @media (max-width: 320px) {

@@ -32,6 +32,7 @@ body {
   font-size: 18px;
   line-height: 1.6;
   position: relative;
+  overflow-x: hidden;
   background-color: #3A2B84;
   /* Fallback Color */
   background-image: -webkit-linear-gradient(to bottom right, #b93bb8, #3A2B84);
@@ -347,9 +348,8 @@ hr.breakline {
 }
 
 /* 決賽名單 */
-.sidebtn_final_list {
-  background: url(../images/sidebtn_final_list.png);
-  background-size: cover;
+.sidebtn_final_list,
+.sidebtn_winners {
   display: block;
   position: fixed;
   width: 220px;
@@ -365,12 +365,24 @@ hr.breakline {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.sidebtn_final_list.small {
+.sidebtn_final_list.small,
+.sidebtn_winners.small {
   width: 160px;
   height: 127px;
 }
-.sidebtn_final_list:hover {
+.sidebtn_final_list:hover,
+.sidebtn_winners:hover {
   opacity: 1;
+}
+
+.sidebtn_final_list {
+  background: url(../images/sidebtn_final_list.png);
+  background-size: cover;
+}
+
+.sidebtn_winners {
+  background: url(../images/sidebtn_winners.png);
+  background-size: cover;
 }
 
 .flist-wrap {
@@ -502,7 +514,8 @@ hr.breakline {
   }
 }
 @media (max-width: 990px) {
-  .sidebtn_final_list.small {
+  .sidebtn_final_list.small,
+.sidebtn_winners.small {
     width: 132px;
     height: 105px;
     right: 0px;
@@ -551,6 +564,12 @@ hr.breakline {
 
   .col-xs-* {
     padding: 10px;
+  }
+
+  .sidebtn_winners.small {
+    top: auto;
+    right: -50px;
+    bottom: 250px;
   }
 }
 /* 
@@ -1452,6 +1471,147 @@ ol.attention {
   padding-left: 0;
 }
 
+/* 
+ * Section: Winners
+ */
+.winners {
+  background: #301152;
+}
+.winners .section-title {
+  margin-bottom: 20px;
+}
+
+.winner-wrap {
+  border: 4px solid #dbb100;
+  box-sizing: border-box;
+  color: #fff !important;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  height: 260px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.winner-wrap::before {
+  content: "";
+  background: url("../images/winner-title-bkg.png") repeat-x;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 90px;
+  z-index: 0;
+  opacity: 0.7;
+}
+.winner-wrap:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+.winner-wrap.gold {
+  background: url("../highlights/20181208_hackathon_gold_award.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.winner-wrap.gold .winner-award {
+  background: #dbb100;
+}
+.winner-wrap.silver {
+  background: url("../highlights/20181208_hackathon_silver_award.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.winner-wrap.silver .winner-award {
+  background: #999;
+}
+.winner-wrap.bronze1 {
+  background: url("../highlights/20181208_hackathon_bronze_award-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.winner-wrap.bronze1 .winner-award {
+  background: #f25a24;
+}
+.winner-wrap.bronze2 {
+  background: url("../highlights/20181208_hackathon_bronze_award-2.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.winner-wrap.bronze2 .winner-award {
+  background: #f25a24;
+}
+.winner-wrap.popular {
+  background: url("../highlights/20181208_hackathon_best_popular_award.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.winner-wrap.popular .winner-award {
+  background: #ff7bac;
+}
+.winner-wrap.honorable {
+  background: url("../highlights/20181208_hackathon_honorable_award.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.winner-wrap.honorable .winner-award {
+  background: #29abe2;
+}
+.winner-wrap .winner-award {
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  padding: 2px 10px;
+}
+.winner-wrap .winner-team {
+  font-size: 36px;
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
+  padding: 0 10px;
+}
+.winner-wrap .winner-work {
+  position: absolute;
+  font-size: 16px;
+  bottom: 0px;
+  right: 0px;
+  padding: 0 10px;
+}
+
+.demoday-video-link {
+  border: 3px solid #fff;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.demoday-video-link:hover {
+  border-color: #ff7bac;
+  color: #ff7bac;
+  text-decoration: none;
+}
+
+.table-winners {
+  border: 1px solid #dbb100;
+  width: 100%;
+}
+.table-winners th, .table-winners td {
+  border: 1px solid #755f00;
+  padding: 6px 10px;
+}
+.table-winners th {
+  background: #dbb100;
+}
+.table-winners tr:hover {
+  background: #3A2B84;
+}
+
 @media (max-width: 992px) {
   .judge-wrap {
     width: calc(100% / 3);
@@ -1501,6 +1661,19 @@ ol.attention {
   }
   .judge-wrap .judge-title {
     font-size: 14px;
+  }
+
+  .winner-wrap {
+    height: 200px;
+  }
+  .winner-wrap .winner-team {
+    font-size: 28px;
+  }
+
+  .demoday-video-link {
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 320px) {
